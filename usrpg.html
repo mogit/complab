@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>usrpg</title>
+    <link rel="stylesheet" type="text/css" href="style_u.css"/>
+</head>
+
+<body>
+
+    <div id="wrapper">
+            <div id="img">
+            <img src="images/image1.jpg"/>
+            </div>
+            <div id="links">
+                <table id="linktable"><tr>
+                <td><a href="http://www.cse.iitk.ac.in/"> CSE Home</a></td> 
+                <td><a href="resources.html">Resources</a></td>
+                <td><a href="status.html">Current Status</a></td>
+                <td><a href="#" >Log Out</a></td>
+                </tr></table>
+            </div>
+            <h1> Welcome USER</h1>
+            <div id="all">
+                <div id="booked">
+            <h2> Your Current Bookings:</h2>
+            <ul>
+                <li> CS101-01/10/212-1800:2100-"Lecture on algorithms" &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Edit</button>&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Cancel</button></li><hr>
+                <li>CS101-03/10/212-1800:2100-"Lecture on algorithms" &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Edit</button>&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Cancel</button></li><hr>
+                <li>CS101-05/10/212-1830:2100-"Workshop on Android" &nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Edit</button>&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Cancel</button></li><hr>
+                <li>CS101-06/10/212-1830:2100-"Workshop on Android" &nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Edit</button>&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Cancel</button></li><hr>
+            </ul><br/><br/><br/>
+            </div>
+                <hr style="height: 10px"
+                <hr style="height:10px">
+            <div id="make">
+            <h2>Event Booking:</h2>
+            <form id="book">
+                <b>Venue:</b> <select name="cars">
+                    <option value="C101">CS101</option>
+                    <option value="saab">CS102</option>
+                    <option value="fiat" selected="selected">CS103</option>
+                    <option value="audi">CS210</option>
+                    <option value="audi">CS314</option>
+                    <option value="audi">CSE Labs</option>
+                    <option value="audi">CSE Lounge</option>
+                    </select>&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <b>Date(dd/mm/yy):</b><input type="text">&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <b>Duration(hhmm-hhmm):</b><input type="text">
+                    <br/><br/>
+                    
+                    <b>Purpose:</b><br/>
+                    <textarea rows="4" cols="40">
+                        
+                    </textarea><br/><br/>
+                    
+                    <b>Tags:</b><br/>
+                    <textarea rows="2" cols="40">
+                        
+                    </textarea><br/><br/>
+                
+                    <b>Comments for viewers:</b><br/>
+                    <textarea rows="4" cols="40">
+                        
+                    </textarea><br/><br/>
+                    <hr>
+            <h2>Regular Bookings:</h2>
+            <form id="rbook">
+                <b>Venue:</b> <select name="venue">
+                    <option value="C101">CS101</option>
+                    <option value="saab">CS102</option>
+                    <option value="fiat" selected="selected">CS103</option>
+                    <option value="audi">CS210</option>
+                    <option value="audi">CS314</option>
+                    <option value="audi">CSE Labs</option>
+                    <option value="audi">CSE Lounge</option>
+                    </select>&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <b>Day:</b><select name="week">
+                    <option value="C101">Monday</option>
+                    <option value="saab">Tuesday</option>
+                    <option value="fiat" selected="selected">Wednesday</option>
+                    <option value="audi">Thursday</option>
+                    <option value="audi">Friday</option>
+                    <option value="audi">Saturday</option>
+                    </select>&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <b>Duration(hhmm-hhmm):</b><input type="text">
+                    <br/><br/>
+                    <b>From(dd/mm/yy):</b><br/> <input type="text"><br/>
+                    <b>Till(dd/mm/yy):</b> <br/><input type="text"><br/><br/>
+                    
+                    <b>Purpose:</b><br/>
+                    <input type="radio">Lecture &nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio">Lab &nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio">Seminar<br/><br/>
+                    
+                    <b>Tags:</b><br/>
+                    <textarea rows="2" cols="40">
+                        
+                    </textarea><br/><br/>
+                
+                    <b>Comments for viewers:</b><br/>
+                    <textarea rows="4" cols="40">
+                        
+                    </textarea>
+                        
+            
+            </form>
+            </div>
+            </div> 
+    </div>
+
+</body>
+</html>
