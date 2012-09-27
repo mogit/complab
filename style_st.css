@@ -1,14 +1,14 @@
 
 body{
     background-size: auto;
-    background-color: rgb(200,200,200);
+    background-color:rgb(200,200,200);
     width: 98%;
     height: 100%;
 }
 #wrapper{
     display:block;
     width:90%;
-    background-color: rgb(200,200,200);
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
@@ -60,12 +60,20 @@ a:visited{
     max-height: 100%;
 }
 #login{
-  margin-left: 15%;
-    margin-right:0%;
-    margin-top:3%;
-   padding-top: 3%;
-   padding-left:10%;
-   padding-right:25%;
+   padding-left: 40%;
+   padding-right: 20%;
+   padding-top: 8%;
    float: left;
-   background-color: rgb(180,180,180);
 }
+/*#news{
+    position:relative;
+    float:right;
+    margin-top: 5%;
+    background-color: rgb(150,150,150);
+    margin-left: 0%;
+}
+#announce{
+    position:relative;
+    margin-bottom: -5%;
+    float:right;
+}*/
