@@ -2,38 +2,53 @@
 
 <html>
 <head>
-    <title>MAIN PAGE</title>
-    <link rel="stylesheet" type="text/css" href="cssfile.css"/>
+    <title>Sign In </title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.vticker-min.js"></script>
+    <script type="text/javascript">
+$(function(){
+        $("#news").vTicker({
+		animation: 'fade',
+		mousePause: false,
+		showItems: 1
+	});
+});
+</script>
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="top">   
-            
-                <div id="image1">    
-                    <img src="images/image1.jpg" id="logo" />
-                </div>
-                
-    
-        </div>  
-    
-        <div id="links">
-            <table id="linktable"><tr>
-            <td><a href="http://www.cse.iitk.ac.in/">Home</a></td> 
-            <td><a href="resources.html">Resources</a></td>
-            <td><a href="status.html">Current Status</a></td>
-            <td><a href="signup.html" >Sign Up</a></td>
-            </tr></table>
-        </div>
-        <div id="login">
-            <form id="form" >
-                Username:<input type="text" id="usrname" style="margin: 2px"><br/>
-                Password:<input type="password" id="passwd" style="margin: px"><br/>
-                     <button type="button" id="submit" style="margin-left: 26%;">Submit</button>
+        <div id="wrapper">
+            <div id="img">
+            <img src="images/image1.jpg"/>
+            </div>
+            <div id="links">
+                <table id="linktable"><tr>
+                <td><a href="http://www.cse.iitk.ac.in/">CSE Home</a></td> 
+                <td><a href="resources.html">Resources</a></td>
+                <td><a href="status.php">Current Status</a></td>
+                <td><a href="signup.html" >Sign Up</a></td>
+                </tr></table>
+            </div>
+            <div id="login">
+            <form id="form" action="check.php" method="post">
+                <h2></u>Login:</u></h2>
+                <b>Username:</b><input type="text" name="usrname" style="margin: 2px"><br/>
+                &nbsp<b>Password:</b><input type="password" name="passwd" style="margin: 2px"><br/>
+                     <button type="submit" id="submit" style="margin-left: 39%;">Submit</button><br>
+		     
             </form>
-        </div>    
-    </div>    
-
+            </div>
+            <b><h2 id="announce">Announcements:</h2></b><br/>
+            <div id="news">
+                <ul>
+		<li>CS 103 booked for next 3 days for yahoo HACK U !<br/><br/>
+		<li>CS 101 holds departmental freshers for UG Y11 tomorrow from 7:30pm to 11pm.<br/><br/>
+		<li>Farewell ceremony of Professor M.K Sharma in CS lounge today after 8pm.<br/><br/>
+                <li>Labs are reserved for internship tests on weekend after 5pm in the evening <br/><br>
+		</ul>
+	    </div>
+        </div>
 
 </body>
 </html>

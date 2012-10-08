@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 
 <html>
 <head>
     <title>sign up</title>
     <link rel="stylesheet" type="text/css" href="style_su.css"/>
-    
-</script>
+  
+   
 </head>
 
 <body>
@@ -17,26 +16,24 @@
                 <table id="linktable"><tr>
                 <td><a href="http://www.cse.iitk.ac.in/"> CSE Home</a></td> 
                 <td><a href="resources.html">Resources</a></td>
-                <td><a href="status.html">Current Status</a></td>
-                <td><a href="signin.html" >Sign In</a></td>
+                <td><a href="status.php">Current Status</a></td>
+                <td><a href="index.html" >Sign In</a></td>
                 </tr></table>
             </div>
             <div id="login">
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h2>Sign up for Event Manager Services</h2><hr><br/>
-            <form id="form" >
-             <b>First Name:<br/><input type="text" id="fname" class="l" ><br/>Last Name:<br/><input type="text" id="lname" class="r"><br/><br/>
-             Designation:<br/><input type="radio">Admins   <input type="radio">Faculty  <input type="radio">Staff  <input type="radio">Students<br/<br/><br/>
-             E-mail ID:<br/><input type="text" id="fname" class="l"> <br/>Telephone number:<br/><input type="text" id="lname" class="r"><br/><br/>
+            <form name="cform" action="signup.php"   method="post">
+             <b>First Name:<br/><input type="text" name="fname" class="l" ><br/>Last Name:<br/><input type="text" name="lname" class="r"><br/><br/>
              
-            <b>Password:</b><br/><input type="password" id="fname" class="l"><br/>
-            <b>Confirm Password:</b><br/><input type="password" id="fname" class="l"><br/><br/><br/></b>
-            
-            
-            <input type="checkbox" >I agree to <a href="#" style="text-height:8px">Terms and Conditions</a>
-             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button"> Sign Up </button>
+             E-mail ID:<br/><input type="text" name="mail" class="l"> <br/>Telephone number:<br/><input type="text" name="tel" class="r"><br/><br/>
+             <b>Username:</b><br/><input type="text" name="usrname" class="l"><br/>
+            <b>Password:</b><br/><input type="password" name="pass1" class="l"><br/>
+            <b>Confirm Password:</b><br/><input type="password" name="pass2" class="l"><br/><br/><br/></b>
+            &nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit"> Sign Up </button>
             </form>
             </div>
             
+           
         </div>
 </body>
 </html>

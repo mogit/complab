@@ -30,8 +30,8 @@ td{
     text-align: center;
     border-bottom-color: rgb(200,200,200);
     border-top-color: rgb(200,200,200);
-    border-left-color: rgb(100,200,100);
-    border-right-color: rgb(100,200,100);
+    border-left-color: rgb(200,200,200);
+    border-right-color: rgb(200,200,200);
     padding:auto;
 }
 td:hover{
@@ -77,4 +77,10 @@ a:visited{
     padding-left: 10%;
     padding-top: 4%;
     padding-bottom: 4%;
+}
+h1{
+    color: red;
+}
+h2{
+    color: green;
 }
