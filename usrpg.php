@@ -6,6 +6,17 @@ if(!isset($_SESSION['usrname'])){
     header("location:index.html");
     }
 ?>
+<?php
+	$connection = mysql_connect("localhost","root","qwerty");
+	if(!$connection){
+		die("Database connection failed :" . mysql_error());
+	}
+	
+	$db_select = mysql_select_db("event",$connection);
+	if(!$db_select){
+		die("Database selection failed: " . mysql_error());
+	}
+?>
 <html>
 <head>
     <title>usrpg</title>
@@ -21,25 +32,41 @@ if(!isset($_SESSION['usrname'])){
             <div id="links">
                 <table id="linktable"><tr>
                 <td><a href="http://www.cse.iitk.ac.in/"> CSE Home</a></td> 
-                <td><a href="resources.html">Resources</a></td>
+                <td><a href="resources.php">Resources</a></td>
                 <td><a href="status.php">Current Status</a></td>
                 <td><a href="signout.php" >Log Out</a></td>
                 </tr></table>
+            </div>
+            <div style="float: right">
+                <a href="chpass.php" style="color: red; size: 5px;">Change Password</a>
             </div>
             <h1> Welcome
             <?php
             echo ucwords($_SESSION['usrname']);
             ?>
             </h1>
+            
             <div id="all">
                 <div id="booked">
             <h2> Your Current Bookings:</h2>
-            <ul>
-                <li> CS101-01/10/212-1800:2100-"Lecture on algorithms" &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Edit</button>&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Cancel</button></li><hr>
-                <li>CS101-03/10/212-1800:2100-"Lecture on algorithms" &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Edit</button>&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Cancel</button></li><hr>
-                <li>CS101-05/10/212-1830:2100-"Workshop on Android" &nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Edit</button>&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Cancel</button></li><hr>
-                <li>CS101-06/10/212-1830:2100-"Workshop on Android" &nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Edit</button>&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button">Cancel</button></li><hr>
-            </ul><br/><br/><br/>
+            
+            <?php
+                $qry="SELECT * FROM book ORDER BY date ASC";
+                $result=mysql_query($qry);
+                if(!$result){
+		die("database query failed: " . mysql_error());
+                }
+	
+                while($row=mysql_fetch_array($result)){
+		if($row['user']==$_SESSION['usrname']){
+                 echo "&nbsp&nbsp&nbsp&nbsp You booked {$row['room']} for {$row['date']} from {$row['from']} till {$row['till']} <br/>&nbsp&nbsp&nbsp&nbsp <b>Description:</b>{$row['description']}";
+                 echo "<hr>";
+                }
+                }
+            ?>
+            
+            
+            <br/><br/><br/>
             </div>
                 <hr style="height: 10px"
                 <hr style="height:10px">

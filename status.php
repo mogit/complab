@@ -37,9 +37,18 @@ $(function(){
             <div id="links">
                 <table id="linktable"><tr>
                 <td><a href="http://www.cse.iitk.ac.in/"> CSE Home</a></td> 
-                <td><a href="resources.html">Resources</a></td>
-                <td><a href="status.html">Current Status</a></td>
-                <td><a href="index.html" >Sign In</a></td>
+                <td><a href="resources.php">Resources</a></td>
+                <td><a href="status.php">Current Status</a></td>
+                <?php
+                if(!isset($_SESSION['usrname']))
+                {
+                echo "<td><a href='index.html' >Sign In</a></td>";
+                }
+                else{
+                //echo "<td><a href='usrpg.php' >Book</a></td>";
+                echo "<td><a href='signout.php' >Log Out</a></td>";
+                }
+                ?>
                 </tr></table>
             </div>
     

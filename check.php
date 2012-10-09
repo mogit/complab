@@ -20,11 +20,10 @@ session_start();
 	if(!$result){
 		die("database query failed: " . mysql_error());
 	}
-	
 	while($row=mysql_fetch_array($result)){
 		//echo $row['user'] . " " . $row['pass'] . "<br>";
                 if(($row['user'])==($_POST['usrname'])){
-                    if((($row['pass']))==(md5($_POST['passwd']))){
+                    if(($row['pass'])==($_POST['passwd'])){
                         //echo "success";
                         //REDIRECT HIM TO HIS HOMEPAGE
                         $flag=1;
@@ -44,5 +43,6 @@ session_start();
                     session_destroy();
                     echo "<a href='index.html'>Go back to sign in</a>";
                     }
+                    
         
 ?>
