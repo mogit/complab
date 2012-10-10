@@ -23,7 +23,7 @@ session_start();
 	while($row=mysql_fetch_array($result)){
 		//echo $row['user'] . " " . $row['pass'] . "<br>";
                 if(($row['user'])==($_POST['usrname'])){
-                    if(($row['pass'])==($_POST['passwd'])){
+                    if(($row['pass'])==md5(($_POST['passwd']))){
                         //echo "success";
                         //REDIRECT HIM TO HIS HOMEPAGE
                         $flag=1;

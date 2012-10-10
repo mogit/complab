@@ -61,7 +61,7 @@ $(function(){
 		<li>Farewell ceremony of Professor M.K Sharma in CS lounge today after 8pm.</li>
                 <li>Labs are reserved for internship tests on weekend after 5pm in the evening </li>
 		</ul>
-	    </div><hr><hr><br/><br/><h1>BOOKINGS:</h1>
+	    </div><hr><hr><br/><br/><h1>BOOKINGS for next 7 days:</h1>
             <u><h2 style="color: red">CS 101</h2></u>
         <?php
 	$qry="SELECT * FROM book ORDER BY date ASC";
@@ -71,8 +71,9 @@ $(function(){
 	}
 	
 	while($row=mysql_fetch_array($result)){
-		if($row['room']=="CS101"){
-                 echo "&nbsp&nbsp&nbsp&nbsp{$row['user']} booked for {$row['date']} from {$row['from']} till {$row['till']} <br/>&nbsp&nbsp&nbsp&nbsp <b>Description:</b>{$row['description']}";
+		if($row['room']=="CS101"&&((strtotime($row['date']) - strtotime(date("Y-m-d"))) / (60 * 60 * 24))<=7){
+                    $hi=ucwords($row['user']);
+                 echo "&nbsp&nbsp&nbsp&nbsp{$hi} booked for {$row['date']} from {$row['from']} for one hour <br/>&nbsp&nbsp&nbsp&nbsp <b>Description:</b>{$row['description']}";
                  echo "<hr>";
                 }
 	}
@@ -87,8 +88,9 @@ $(function(){
 	}
 	
 	while($row=mysql_fetch_array($result)){
-		if($row['room']=="CS102"){
-                 echo "&nbsp&nbsp&nbsp&nbsp{$row['user']} booked for {$row['date']} from {$row['from']} till {$row['till']} <br/> &nbsp&nbsp&nbsp&nbsp<b>Description:</b>{$row['description']}";
+		if($row['room']=="CS102"&&((strtotime($row['date']) - strtotime(date("Y-m-d"))) / (60 * 60 * 24))<=7){
+                    $hi=ucwords($row['user']);
+                 echo "&nbsp&nbsp&nbsp&nbsp{$hi} booked for {$row['date']} from {$row['from']} for one hour <br/> &nbsp&nbsp&nbsp&nbsp<b>Description:</b>{$row['description']}";
                  echo "<hr>";
                 }
 	}

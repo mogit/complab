@@ -38,7 +38,7 @@ if(!isset($_SESSION['usrname'])){
                 </tr></table>
             </div>
             <div style="float: right">
-                <a href="chpass.php" style="color: red; size: 5px;">Change Password</a>
+                <u><a href="chpass.php" style="color: brown; size: 5px;">Change Password</a></u>
             </div>
             <h1> Welcome
             <?php
@@ -59,7 +59,7 @@ if(!isset($_SESSION['usrname'])){
 	
                 while($row=mysql_fetch_array($result)){
 		if($row['user']==$_SESSION['usrname']){
-                 echo "&nbsp&nbsp&nbsp&nbsp You booked {$row['room']} for {$row['date']} from {$row['from']} till {$row['till']} <br/>&nbsp&nbsp&nbsp&nbsp <b>Description:</b>{$row['description']}";
+                 echo "&nbsp&nbsp&nbsp&nbsp You booked {$row['room']} for {$row['date']} from {$row['from']} for one hour <br/>&nbsp&nbsp&nbsp&nbsp <b>Description:</b>{$row['description']}";
                  echo "<hr>";
                 }
                 }
@@ -73,17 +73,16 @@ if(!isset($_SESSION['usrname'])){
             <div id="make">
             <h2>Event Booking:</h2>
             <form name="book" action="book.php" method="post">
-                <b>Venue:</b> <select name="venue">
+                <b>Venue*:</b> <select name="venue">
                     <option value="CS101">CS101</option>
                     <option value="CS102">CS102</option>
                     
                     </select>&nbsp&nbsp&nbsp&nbsp&nbsp
-                    <b>Date(yyyy-mm-dd):</b><input type="text" name="date">&nbsp&nbsp&nbsp&nbsp&nbsp
-                    <b>From(hh:mm):</b><input type="text" name="from">
-                    <b>Till(hh:mm):</b><input type="text" name="till">
+                    <b>Date*(yyyy-mm-dd):</b><input type="text" name="date">&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <b>From*(hh:mm):</b><input type="text" name="from">
                     <br/><br/>
                     
-                    <b>Purpose:</b><br/>
+                    <b>Name/Description*</b><br/>
                     <textarea rows="4" cols="40" name="purpose">
                         
                     </textarea><br/><br/>

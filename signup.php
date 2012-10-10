@@ -16,8 +16,8 @@
     $mail=$_POST['mail'];
     $tel=$_POST['tel'];
     $usrname=$_POST['usrname'];
-    $pass1=$_POST['pass1'];
-    $pass2=$_POST['pass2'];
+    $pass1=md5($_POST['pass1']);
+    $pass2=md5($_POST['pass2']);
 ?>
 
 <?php
