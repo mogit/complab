@@ -18,16 +18,3 @@ Later it will be connected to the submit button of SignIn page.
 ...................................................................................................................
 https://github.com/mogit/complab.git
 ...................................................................................................................
-PART
-2
------------------
-Login logout enabled
-session implemented
-sign-Up-- normal checks on form
-passwords encrypted
-Event booking-- normal checks on form
-change password option enabled.
-User sees his own events booked in increasiing order of dates.
-clashes for events handled
-on Status page, u get to see booking for next 7 days in increasing order and according to room.
-
