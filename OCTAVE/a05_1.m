@@ -18,5 +18,11 @@ T=imread("input.bmp");
 	pre_y=55;
 	pre_k=k;
 
-	f
+	
+		for (temp1= pre_k+20:pre_k+30)
+			for temp2= 745:800
+				P(temp1,temp2)=0;
+			end
+		end
+
 imwrite(P,"output.bmp");
