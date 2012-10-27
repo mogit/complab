@@ -1,0 +1,9 @@
+Using R, generate all 51 integers from 0 to 50 into the vector x. For each such integer in x, compute y1 = Binomial(50,0.3), y2 = Poisson(15), and y3 = Gaussian(15,\sqrt{10.5}). (The parameters thus are n=50, p=0.3; \lambda=15; \mu=15,\sigma^2=10.5) Output these four vectors for plotting in gnuplot. Write a Gnuplot script (.gnu file) that plots y1, y2, and y3 against x in a single graph. Complete the graph with labeled axes, title, and key (or legend). Also, label the graph with "np", "\mu", and "\lambda" near the means of the distributions. Now generate samples of sizes 10^3, 10^4, 10^5, 10^6 from each of the above three distributions. Note that this generates in four sets of three vectors each. Call them as s11, s12, ..., s43, etc. For each of these vectors, compute the histograms that has 51 bins, and whose bin centres are the points in x. Call them h11, h12, ..., h43, etc. 
+
+Output them for plotting with gnuplot. Write a Gnuplot script that draws all these 12 histograms along with the original y1, y2, and y3 (all these are against x). You may need to use stacked histograms. Repeat the above exercise with Octave instead of R. (Hint: Look at statistical functions for both the tools.)
+
+
+Deadline is 29th oct 11pm. No extension possible. It is easy.
+
+II
+
