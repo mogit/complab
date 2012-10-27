@@ -1,0 +1,30 @@
+#Info About graph
+2 set title "Random Probablity Distributions"
+3 set xlabel "Values"
+4 set ylabel "Probability"
+5 set xtics 0,5,50
+6
+7 #Setting parameters for histogram
+8 set boxwidth 1
+9 set xrange [0:50]
+10 set style data histograms
+11 set style fill solid
+12
+13 #Plotting Histogram
+14 plot "data11.txt" title "h11",\
+15 "data12.txt" title "h12",\
+16 "data13.txt" title "h13",\
+17 "data21.txt" title "h21",\
+18 "data22.txt" title "h22",\
+19 "data23.txt" title "h23",\
+20 "data31.txt" title "h31",\
+21 "data32.txt" title "h32",\
+22 "data33.txt" title "h33",\
+23 "data41.txt" title "h41",\
+24 "data42.txt" title "h42",\
+25 "data43.txt" title "h43"
+26
+27 pause -1
+~
+~
+~
