@@ -8,7 +8,11 @@ source("r_1.R")
 source("r_2.R") 
 * This will create 3+12 files
 * Now open gnuplot with arguement r_1.gnu for seeing 3 distributions on density/OR
-with arguement r_2.gnu for seeing random values' histogram
+with arguement r_2.gnu for seeing random values' rowstacked histogram
+OR
+with arguement r_2r.gnu for seeing normal histogram
+OR
+with arguement r_2rr.gnu to see rowstacked histogram and initial graph of y1/y2/y3 on same window
 ***For work of octave go to "oct" folder
 
 *delete all files starting with y or s
@@ -17,4 +21,7 @@ with arguement r_2.gnu for seeing random values' histogram
 *open octave with arguement oct_1.m once
 then again with arguement oct_2.m .
 *this will create 3+12 files.
-*Gnuplot procedure is then same.
+*Gnuplot procedure is then same except files are noe oct_1.gnu, oct_2.gnu and oct_2r.gnu
+NOTE:
+1)running r_2.R will take some time.
+2)GIt repo: https://github.com/mogit/complab.git

@@ -1,10 +1,11 @@
+set term png
+set output "plot2.png"
 set title "Random Probablity Distributions"
 set xlabel "Values"
 set ylabel "Probability"
 set xtics 0,5,50
-
 set boxwidth 1
-set xrange [0:50]
+set xrange [-0.5:50.5]
 set style data histograms
 set style histogram rowstacked
 set style fill solid

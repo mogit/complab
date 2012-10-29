@@ -11,26 +11,15 @@ s41=rbinom(1000000,50,0.3)
 s42=rpois(1000000,15)
 s43=rnorm(1000000, mean=15, sd=sqrt(10.5))
 
-for(i in 1:length(s11)){
-	        write(s11[i],file="s11.txt",append=TRUE)
-	        write(s12[i],file="s12.txt",append=TRUE)
-		write(s13[i],file="s13.txt",append=TRUE)
-}
-
-for(i in 1:length(s21)){
-	        write(s21[i],file="s21.txt",append=TRUE)
-	        write(s22[i],file="s22.txt",append=TRUE)
-		write(s23[i],file="s23.txt",append=TRUE)
-}
-
-for(i in 1:length(s31)){
-	        write(s31[i],file="s31.txt",append=TRUE)
-	        write(s32[i],file="s32.txt",append=TRUE)
-		write(s33[i],file="s33.txt",append=TRUE)
-}
-
-for(i in 1:length(s41)){
-	        write(s41[i],file="s41.txt",append=TRUE)
-	        write(s42[i],file="s42.txt",append=TRUE)
-		write(s43[i],file="s43.txt",append=TRUE)
-}
+write.table(s11,file="s11.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s12,file="s12.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s13,file="s13.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s21,file="s21.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s22,file="s22.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s23,file="s23.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s31,file="s31.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s32,file="s32.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s33,file="s33.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s41,file="s41.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s42,file="s42.txt",sep=" ",row.names=FALSE,col.names=FALSE)
+write.table(s43,file="s43.txt",sep=" ",row.names=FALSE,col.names=FALSE)
