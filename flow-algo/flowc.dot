@@ -1,0 +1,38 @@
+digraph flowchart {
+
+node[
+	fontsize = 10
+	shape = "record"
+	]
+edge [
+	fontsize = 10
+  ]
+
+a [label = "Algorithm Starts", shape="rectangle"]
+b [label = "Get input A and B and declare an array C", shape="rectangle"]
+c [label = "Set i = 0", shape="rectangle"]
+d [label = "Set j = 0", shape ="rectangle"]
+e [label = "Do C[i][j] = C[i][j] + A[i]*B[j]", shape="rectangle"]
+f [label = "Do C[i][j+1] = C[i][j]/10", shape="rectangle"]
+g [label = "Do C[i][j] = C[i][j]%10", shape="rectangle"]
+h [label = "if j<n", shape="rectangle"]
+i [label = "j=j+1", shape="rectangle"]
+j [label = "if i<n", shape="rectangle"]
+k [label = "i=i+1", shape="rectangle"]
+l [label = "stop", shape="rectangle"]
+
+
+a -> b 
+b -> c 
+c ->d 
+d -> e
+e -> f
+f -> g
+g -> h
+h -> i [label ="true"]
+h -> j [label ="false"]
+i -> e
+j -> k [label="true"]
+j -> l [label="false"]
+k -> d
+}
