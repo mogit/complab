@@ -1,0 +1,76 @@
+% small.tex
+\documentclass{beamer}
+\usetheme{Berkeley}
+\begin{document}
+
+\begin{frame}{AND GATE}
+\begin{block}{}
+    \begin{itemize}
+	\item A logic gate is an idealized or physical device implementing a Boolean function, that is, it performs a logical operation on one or more logic inputs and produces a single logic output.
+	\item AND gate takes two inputs and gives output as low(0) whenever any of it's input is low(0).   
+	\item It is represented as \alert{C=A.B} 
+    \end{itemize}
+  \end{block}
+\pause
+\begin{block}{Truth Table}
+\begin{tabular}{|c|c||c|}
+\hline
+ \textbf{A} &
+\textbf{B} & \textbf{C} \\
+\hline
+\hline
+ 0 & 0 & 0 \\
+\hline
+ 0 & 1 & 0 \\
+\hline
+ 1 & 0 & 0 \\
+\hline
+ 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{block}
+\end{frame}
+\begin{frame}{OR GATE}
+\begin{itemize}
+  \item OR gate takes two inputs and gives output as high(1) whenever any of it's input is high(1).
+  \item It is represented as C=A+B
+\end{itemize}
+
+\begin{tabular}{|c|c||c|}
+\hline
+ \textbf{A} &
+\textbf{B} & \textbf{C} \\
+\hline
+\hline
+ 0 & 0 & 0 \\
+\hline
+ 0 & 1 & 1 \\
+\hline
+ 1 & 0 & 1 \\
+\hline
+ 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{frame}
+\begin{frame}{NOT GATE}
+\begin{itemize}
+  \item NOT gate takes one inputs and gives complementary output.
+  \item It is represented as C=A
+\end{itemize}
+
+\begin{tabular}{|c|c|}
+\hline
+ \textbf{A} &
+\textbf{C} \\
+\hline
+\hline
+ 1 & 0 \\
+\hline
+ 0 & 1 \\
+\hline
+\end{tabular}
+\end{frame}
+\begin{frame}{De Morgan's laws}
+\end{frame}
+
+\end{document}

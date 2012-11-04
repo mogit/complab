@@ -1,9 +1,9 @@
-%I HAVE COMMENTED CODE FOR BIBLIOGRAPHY, I AM SENDING THE BIB FILE ALONGSIDE !
-%I commented it as thouGH IT IS CORRECTED IT IS GVING COMPILATION ERROR
+
 \documentclass[11pt]{article}
+\usepackage{natbib}
 \usepackage[lined,boxed,linesnumbered]{algorithm2e}
 \usepackage{amsmath}
-\usepackage{natbib}
+
 \usepackage{graphicx}
 
 
@@ -31,7 +31,7 @@ In the end, we will be left with answer to multiplication in reverse order.\\\\
 \caption{example to explain algorithm}
 \end{figure}
 
-\begin{algorithm}[!h]
+\begin{algorithm}
 \KwData{Input will be two arrays $ A[0..n-1]$ and $ B[0..n-1]$. We will use an extra array $C[0..(2n-1)] $ to store the result at each step and hence the result of multiplication after final step.}
 \KwResult{The result will be multiplication of two given number in digit form in array $C$}
 Set all elements of $C$ to be zero.\\
@@ -61,13 +61,12 @@ return array$C$\\
 \subsection{Analysis of Time Complexity of the Algorithm}
 Algorithm 1 executes ``for'' loop on $i$, $b-1$ times, and in each iteration it runs another for loop on $j$, $a-1$ times doing some constant number of operations. \\
 Hence the total number of operations executed are $k*a*b$ where $k$ is a constant.Maximum value of a and b can be $n$ and hence worst case time complexity is $k*(n^2)$ or O$(n^2)$.
-\section{bibliography}
 
-%\cite{latex}
-%\cite{xfig}
-%\cite{wikipediainfo}
-%\bibliographystyle{plain}
-%\bibliography{bibgraph.bib}
+\cite{latex}
+\cite{xfig}
+\cite{wikipediainfo}
+\bibliographystyle{plain}
+\bibliography{bibgraph.bib}
 
 \end{document}
 

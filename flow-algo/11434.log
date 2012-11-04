@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.8.26)  5 NOV 2012 02:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.8.26)  5 NOV 2012 03:19
 entering extended mode
  %&-line parsing enabled.
 **11434.tex
@@ -22,9 +22,16 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count87
 ) (./algorithm2e.sty
 Package: algorithm2e 2008/00/00 v3.10 algorithms environments
-\c@AlgoLine=\count87
+\c@AlgoLine=\count88
 
 (/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
@@ -42,14 +49,14 @@ Package `algorithm2e' Release 4.01 -- december 14 2009 --
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 - Author: Christophe Fiorio (fiorio@lirmm.fr)
 ********************************************************
-\skiptotal=\skip43
-\skiplinenumber=\skip44
-\skiprule=\skip45
-\skiphlne=\skip46
-\skiptext=\skip47
-\skiplength=\skip48
-\algomargin=\skip49
-\skipalgocfslide=\skip50
+\skiptotal=\skip45
+\skiplinenumber=\skip46
+\skiprule=\skip47
+\skiphlne=\skip48
+\skiptext=\skip49
+\skiplength=\skip50
+\algomargin=\skip51
+\skipalgocfslide=\skip52
 \algowidth=\dimen103
 \inoutsize=\dimen104
 \inoutline=\dimen105
@@ -58,23 +65,23 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \interspacetitleboxruled=\dimen108
 \algocf@inoutbox=\box26
 \algocf@inputbox=\box27
-\AlCapSkip=\skip51
-\AlCapHSkip=\skip52
+\AlCapSkip=\skip53
+\AlCapHSkip=\skip54
 \algocf@nlbox=\box28
 \algocf@hangingbox=\box29
 \algocf@capbox=\box30
-\algoheightruledefault=\skip53
-\algoheightrule=\skip54
-\algotitleheightruledefault=\skip55
-\algotitleheightrule=\skip56
-\c@algocfline=\count88
-\c@algocfproc=\count89
-\c@algocf=\count90
+\algoheightruledefault=\skip55
+\algoheightrule=\skip56
+\algotitleheightruledefault=\skip57
+\algotitleheightrule=\skip58
+\c@algocfline=\count89
+\c@algocfproc=\count90
+\c@algocf=\count91
 \algocf@algoframe=\box31
 \algocf@algobox=\box32
 ) (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip57
+\@mathmargin=\skip59
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
@@ -92,13 +99,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count91
+\inf@bad=\count92
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count92
-\leftroot@=\count93
+\uproot@=\count93
+\leftroot@=\count94
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count94
-\DOTSCASE@=\count95
+\classnum@=\count95
+\DOTSCASE@=\count96
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -107,15 +114,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen111
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
 \tag@help=\toks15
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
 \andhelp@=\toks16
 \eqnshift@=\dimen112
 \alignsep@=\dimen113
@@ -124,18 +131,11 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \totwidth@=\dimen116
 \lineht@=\dimen117
 \@envbody=\toks17
-\multlinegap=\skip58
-\multlinetaggap=\skip59
+\multlinegap=\skip60
+\multlinetaggap=\skip61
 \mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-)
-(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
-Package: natbib 2009/07/16 8.31 (PWD, AO)
-\bibhang=\skip60
-\bibsep=\skip61
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count103
 )
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -215,9 +215,6 @@ File: mohit.pdf Graphic file (type pdf)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 <flowc.pdf, id=2, 274.02374pt x 921.4425pt>
 File: flowc.pdf Graphic file (type pdf)
  <use flowc.pdf>
@@ -229,26 +226,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./mohit.pdf>]
-[3] [4 <./flowc.pdf>] (./11434.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./11434.bbl)
+[3 <./mohit.pdf>] [4 <./flowc.pdf>] (./11434.aux) ) 
 Here is how much of TeX's memory you used:
- 3009 strings out of 495061
- 37101 string characters out of 1182621
- 116161 words of memory out of 3000000
- 6195 multiletter control sequences out of 15000+50000
+ 3018 strings out of 495061
+ 37235 string characters out of 1182621
+ 116086 words of memory out of 3000000
+ 6201 multiletter control sequences out of 15000+50000
  10364 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  27i,14n,26p,536b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx8.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb>
-Output written on 11434.pdf (4 pages, 169167 bytes).
+</usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb>
+Output written on 11434.pdf (4 pages, 169992 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
