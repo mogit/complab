@@ -1,0 +1,17 @@
+
+@article{latex,
+       author = {http://www.latex-community.org},
+       title = {Biblography Information Bibtex},
+ 
+     }
+
+@article{xfig,
+       author={http://xfig.org/},
+       title={User Manual for xfig},
+     }
+
+@article{wikipedia information,
+       author={http://en.wikipedia.org},
+       title={Long Multiplication Algorithm},
+     }
+

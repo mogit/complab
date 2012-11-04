@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: 11434.aux
+The style file: plainnat.bst
+Database file #1: bibgraph.bib.bib
+Warning--empty journal in wikipediainfo
+Warning--empty year in wikipediainfo
+Warning--empty year in wikipediainfo
+Warning--empty journal in latex
+Warning--empty year in latex
+Warning--empty year in latex
+Warning--empty journal in xfig
+Warning--empty year in xfig
+Warning--empty year in xfig
+You've used 3 entries,
+            2773 wiz_defined-function locations,
+            601 strings with 5004 characters,
+and the built_in function-call counts, 921 in all, are:
+= -- 69
+> -- 30
+< -- 3
++ -- 12
+- -- 9
+* -- 59
+:= -- 148
+add.period$ -- 6
+call.type$ -- 3
+change.case$ -- 12
+chr.to.int$ -- 3
+cite$ -- 15
+duplicate$ -- 57
+empty$ -- 91
+format.name$ -- 12
+if$ -- 178
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 3
+newline$ -- 20
+num.names$ -- 12
+pop$ -- 45
+preamble$ -- 1
+purify$ -- 9
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 6
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 33
+warning$ -- 9
+while$ -- 9
+width$ -- 0
+write$ -- 34
+(There were 9 warnings)

@@ -1,8 +1,11 @@
+%I HAVE COMMENTED CODE FOR BIBLIOGRAPHY, I AM SENDING THE BIB FILE ALONGSIDE !
+%I commented it as thouGH IT IS CORRECTED IT IS GVING COMPILATION ERROR
 \documentclass[11pt]{article}
-
 \usepackage[lined,boxed,linesnumbered]{algorithm2e}
 \usepackage{amsmath}
+\usepackage{natbib}
 \usepackage{graphicx}
+
 
 \begin{document}
 \author{Mohit Sharma}
@@ -17,9 +20,16 @@
 
 \subsection{ Solution: }
 We solve the multiplication problem through the approach adopted in school. We save the first number as a string in array $A$, second number as string in array $B$.We store result of multiplication in an array $C$. We start from last element (before '/0') of array $B$. Keep multiplying it with digits of number $A$ starting again from the last element and going till the first digit of $A$. At each step we store the result of multiplication $(mod 10)$ in same cell and carry  (result/10) to next step.\\
+
+
 {Note:} The result C is in reverse order.\\
 Then we do the same with the second-last element of B and this time, we start adding result from secondlast element of C. and at each step we start from one element ahead than previous time.
 In the end, we will be left with answer to multiplication in reverse order.\\\\
+
+\begin{figure}[!h]
+\rotatebox{-90}{\includegraphics[scale=0.4]{mohit}}
+\caption{example to explain algorithm}
+\end{figure}
 
 \begin{algorithm}[!h]
 \KwData{Input will be two arrays $ A[0..n-1]$ and $ B[0..n-1]$. We will use an extra array $C[0..(2n-1)] $ to store the result at each step and hence the result of multiplication after final step.}
@@ -40,14 +50,24 @@ Reverse array $C$;\\
 return array$C$\\
 \caption{Algorithm for multiplying two long numbers}
 \end{algorithm}
+
 \begin{figure}[!h]
 \centerline{\includegraphics[scale=0.6]{flowc}}
 \caption{Algorithm explained through flowchart}
 \end{figure}
 
 
+
 \subsection{Analysis of Time Complexity of the Algorithm}
 Algorithm 1 executes ``for'' loop on $i$, $b-1$ times, and in each iteration it runs another for loop on $j$, $a-1$ times doing some constant number of operations. \\
 Hence the total number of operations executed are $k*a*b$ where $k$ is a constant.Maximum value of a and b can be $n$ and hence worst case time complexity is $k*(n^2)$ or O$(n^2)$.
+\section{bibliography}
+
+%\cite{latex}
+%\cite{xfig}
+%\cite{wikipediainfo}
+%\bibliographystyle{plain}
+%\bibliography{bibgraph.bib}
 
 \end{document}
+
