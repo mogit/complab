@@ -1,0 +1,209 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usetheme{Warsaw}
+\begin{document}
+\begin{frame}
+MOHIT SHARMA \\
+11434\\
+GROUP-12
+\end{frame}
+\begin{frame}[label=AND]{AND GATE}
+\begin{block}{}
+    \begin{itemize}
+	\only<1>{\item A logic gate is a physical device that implements a Boolean function}
+	\item It performs a logical operation on one or more logic inputs and produces a single logic output.
+	\item AND gate takes two inputs and gives output as low(0) whenever any of its input is low(0).   
+	\item The representation of \alert{AND} function is \visible{\alert{C=A.B}} 
+    \end{itemize}
+  \end{block}
+\pause
+\begin{block}{}
+\begin{tabular}{|c|c||c|}
+\hline
+ \textbf{A} &
+\textbf{B} & \textbf{C} \\
+\hline
+\hline
+ 0 & 0 & 0 \\
+\hline
+ 0 & 1 & 0 \\
+\hline
+ 1 & 0 & 0 \\
+\hline
+ 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{block}
+\end{frame}
+%1
+\begin{frame}
+\begin{figure}
+\includegraphics[scale=0.2]{../beamer_bib/and} 
+\caption{AND gate}
+\end{figure}
+\end{frame}
+\begin{frame}[label=OR]{OR GATE}
+\begin{block}{}
+\begin{itemize}
+  \item OR gate takes two inputs and gives output as high(1) whenever any of it's input is high(1),else it gives low(0).
+  \item It is represented as \only{\alert{C=A+B}}
+\end{itemize}
+\end{block}
+\medskip
+\medskip
+\pause
+\begin{block}{Truth Table for OR gate}
+\begin{tabular}{|c|c||c|}
+\hline
+ \textbf{A} &
+\textbf{B} & \textbf{C} \\
+\hline
+\hline
+ 0 & 0 & 0 \\
+\hline
+ 0 & 1 & 1 \\
+\hline
+ 1 & 0 & 1 \\
+\hline
+ 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{block}
+\end{frame}
+%2
+\begin{frame}
+\begin{figure}
+\includegraphics[scale=0.2]{../beamer_bib/or} 
+\caption{OR gate}
+\end{figure}
+\end{frame}
+\begin{frame}[label=NOT]{NOT GATE}
+\begin{block}{}
+\begin{itemize}
+  \item NOT gate is different from previous two in the sense that it has 1 input instead of two.
+  \item The output is high(1) if input is low(0) and vice versa.
+  
+\end{itemize}
+\end{block}
+\medskip
+\medskip
+\pause
+\begin{block}{Truth Table for NOT gate}
+\begin{tabular}{|c|c|}
+\hline
+ \textbf{A} &
+\textbf{B} \\
+\hline
+\hline
+ 0 & 1 \\
+\hline
+ 1 & 0 \\
+\hline
+\end{tabular}
+\end{block}
+\end{frame}
+%3
+\begin{frame}
+\begin{figure}
+\includegraphics[scale=0.2]{../beamer_bib/not} 
+\caption{NOT gate}
+\end{figure}
+\end{frame}
+%4
+\begin{frame}{De-Morgan's Laws}
+The rules given by De-Morgan allow the expression of conjunctions and disjunctions purely in terms of each other via negation.Refer to slides \pageref{AND}, \pageref{OR}, and \pageref{NOT} before going further.
+\pause
+\begin{block}{Laws}
+The laws if laid in plain English are as follows:
+\begin{enumerate}
+\item The negation of a conjunction is the disjunction of the negations.
+\item The negation of a disjunction is the conjunction of the negations.
+\end{enumerate}
+\end{block}
+\end{frame}
+%5
+\begin{frame}{Law 1}
+\begin{theorem} 
+The negation of a conjunction is the disjunction of the negations.\\
+Represented mathematically:
+\begin{equation}\label{1}
+\overline{A+B}=\overline{A}.\overline{B}
+\end{equation}
+\end{theorem}
+\end{frame}
+%6
+\begin{frame}
+\begin{equation}
+                \overline{A+B} = \overline{A}.\overline{B}
+\end{equation}
+        \begin{block}{Proof using Truth Table}
+                \begin{tabular}{|c|c||c||c||c||c||c|}
+                        \hline
+                         \textbf{A} &
+                        \textbf{B} & \textbf{A+B} &\textbf{A'} &
+                        \textbf{B'} &\textbf{(A+B)'} & \textbf{A'.B'}\\
+                        \hline
+                        \hline
+                         0 & 0 & 0 & 1 & 1 & 1 & 1\\
+                        \hline
+                         0 & 1 & 1 & 1 & 0 & 0 & 0 \\
+                        \hline
+                         1 & 0 & 1 & 0 & 1 & 0 & 0 \\
+                        \hline
+                         1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+                        \hline
+                \end{tabular}
+        \end{block}
+\end{frame}
+%7
+\begin{frame}{Law 2}
+\begin{theorem}
+The negation of a disjunction is the conjunction of the negations.\\
+Represented mathematically:
+\begin{equation}
+\overline{A.B}=\overline{A}+\overline{B}
+\end{equation}
+\end{theorem}
+\end{frame}
+%8
+\begin{frame}
+\begin{equation}\label{2}
+                     \overline{A.B} = \overline{A}+\overline{B}
+\end{equation}
+        \begin{block}{Proof using Truth Table}
+                \begin{tabular}{|c|c||c||c||c||c||c|}
+                        \hline
+                         \textbf{A} &
+                        \textbf{B} & \textbf{AB} & \textbf{A'} & \textbf{B'} &
+                        \textbf{AB'} & \textbf{A'+B'}\\
+                        \hline
+                        \hline
+                         0 & 0 & 0 & 1 & 1 & 1 & 1 \\
+                        \hline
+                         1 & 0 & 0 & 0 & 1 & 1 & 1 \\
+                        \hline
+                        0 & 1 & 0 & 1 & 0 & 1 & 1 \\
+                        \hline
+                         1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+                        \hline
+                \end{tabular}
+        \end{block}
+    
+\end{frame}
+%9
+\begin{frame}{Generalised De-Morgan's Laws}
+Equations \ref{1} and \ref{2} represent a special case.The law can be extended to more than two inputs following the definition itself.
+\pause
+\begin{block}{Laws}
+\begin{equation}
+\overline{(A+B+C+D+E.....)}=\overline{A}.\overline{B}.\overline{C}.\overline{D}.\overline{E}.....
+\end{equation}
+\begin{equation}
+\overline{(A.B.C.D.E.....)}=\overline{A}+\overline{B}+\overline{C}+\overline{D}+\overline{E}.....
+\end{equation}
+\end{block}
+\end{frame}
+%10
+
+\end{document}
+
